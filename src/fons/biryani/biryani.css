@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Biryani';
+    src: local('Biryani DemiBold'), local('Biryani-DemiBold'), url('Biryanidemibold.woff2') format('woff2'), url('Biryanidemibold.woff') format('woff'), url('Biryanidemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Biryani';
+    src: local('Biryani UltraLight'), local('Biryani-UltraLight'), url('Biryaniultralight.woff2') format('woff2'), url('Biryaniultralight.woff') format('woff'), url('Biryaniultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Biryani';
+    src: local('Biryani Light'), local('Biryani-Light'), url('Biryanilight.woff2') format('woff2'), url('Biryanilight.woff') format('woff'), url('Biryanilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Biryani';
+    src: local('Biryani'), local('Biryani-Regular'), url('Biryani.woff2') format('woff2'), url('Biryani.woff') format('woff'), url('Biryani.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Biryani';
+    src: local('Biryani Heavy'), local('Biryani-Heavy'), url('Biryaniheavy.woff2') format('woff2'), url('Biryaniheavy.woff') format('woff'), url('Biryaniheavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Biryani';
+    src: local('Biryani Bold'), local('Biryani-Bold'), url('Biryanibold.woff2') format('woff2'), url('Biryanibold.woff') format('woff'), url('Biryanibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Biryani';
+    src: local('Biryani ExtraBold'), local('Biryani-ExtraBold'), url('Biryaniextrabold.woff2') format('woff2'), url('Biryaniextrabold.woff') format('woff'), url('Biryaniextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}

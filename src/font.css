@@ -1,0 +1,17 @@
+/* подключение шрифтов */
+@font-face {
+    font-family: "Fredoka";
+    src: url(fons/FredokaOne-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Biryanilight";
+    src: url(fons/biryani/Biryaniultralight.ttf);
+  }
+  @font-face {
+    font-family: "Merriweather";
+    src: url(fons/Merriweather/Merriweather-Light.ttf);
+  }
+  @font-face {
+    font-family: "Maitree-Light";
+    src: url(fons/Maitree/Maitree-Medium.ttf);
+  }

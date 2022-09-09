@@ -1,0 +1,36 @@
+.menu{
+    display:flex;
+    width: 80%;
+    height: 2vw;
+    margin: 1vw auto;
+    justify-content: flex-end;
+  }
+  .wrap{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    
+    
+  }
+  .under_menu{
+    font-family:'Maitree-Light';
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: stretch;
+    font-size: 1vw;
+    color: rgb(241, 182, 88);
+  }
+  .und_under_menu{
+    width: 60%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .und_under_menu:hover,
+  .und_under_menu:focus{
+    border-bottom: 2px solid rgba(111, 195, 197, 1);
+  }
+  

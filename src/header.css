@@ -1,0 +1,163 @@
+/* хедер */
+.head{
+    display: flex;
+    width: 100%;
+    height: 5vw;
+    
+  }
+  /* 3 блока в хедаре */
+  .left,.lable,.right{
+    height: 100%;
+  }
+  .left,.right{
+    display: flex;
+    width: 45%;
+    border-bottom: 1px solid rgba(111, 195, 197, 1);
+  }
+  .lable{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+  }
+  .left{
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  /* лайбл */
+  a{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/lab.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  
+  
+  
+  /* форма поиска */
+  .forma{
+    font-family: 'Fredoka';
+    display: flex;
+    width: 60%;
+    height: 50%;
+    background-color: transparent;
+    border-radius: 25px;
+    border-bottom: 1px solid rgba(111, 196, 197, 0.219);
+    align-items: center;
+    
+  }
+  /* строка поиска */
+   .form_serch{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  /* инпут поиск */
+  .form_input{
+    font-size: 1vw;
+    text-indent: 1.2em;
+    color:rgb(241, 182, 88);
+    background-color:transparent;
+    width: 100%;
+    height: 70%;
+    border: none;
+    outline: none;
+  }
+  /* доп настройки для импут */
+  input::placeholder{
+    text-indent: 1.2em;
+    font-size: 1vw;
+    color:rgba(241, 182, 88, 0.596);
+    
+  }
+  .forma input{
+    padding-left: 5%;
+  }
+  /* изменения при наведении инпут */
+  .forma:focus,
+  .forma:hover
+  {
+    background-color: rgba(111, 196, 197, 0.219);
+  }
+  
+  /* кнопка */
+  .form_buttn{
+    display: flex;
+    justify-content:flex-end;
+    width: 40%;
+    height: 100%;
+  }
+  /* настройки для кнопки */
+  .button{
+    background-color: transparent;
+    display: flex;
+    border: none;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fa_search{
+    width: 50%;
+    height: 50%;
+    background-image: url(img/Group\ 3.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  /* наведение на кнопку */
+  .fa_search:focus,
+  .fa_search:hover{
+    background-image: url(img/Group\ 4.svg);
+    cursor: pointer;
+  }
+  
+  /* кнопки регистрации и входа */
+  .forma_btn{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* настройки контейнеров */
+  .right_bnt, .left_btn{
+    display: flex;
+    width: 50%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* настройки кнопок */
+  .right_bnt>.btn,
+  .left_btn>.btn{
+    color: rgba(241, 182, 88, 0.678);
+    font-size: 1vw;
+    background-color: transparent;
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    border-bottom: 1px solid rgba(111, 196, 197, 0.219);
+    cursor: pointer;
+  }
+  /* наведение на кнопки */
+  .right_bnt>.btn:hover,
+  .right_bnt>.btn:hover:focus,
+  .left_btn>.btn:hover,
+  .left_btn>.btn:focus{
+    background-color: rgba(111, 196, 197, 0.219);
+    color: rgb(241, 182, 88);
+  }
