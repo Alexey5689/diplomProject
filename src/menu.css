@@ -13,7 +13,7 @@
     
   }
   .under_menu{
-    font-family:'Maitree-Light';
+    font-family:Arial, Helvetica, sans-serif;
     display: flex;
     width: 25%;
     height: 100%;
@@ -21,6 +21,7 @@
     align-items: stretch;
     font-size: 1vw;
     color: rgb(241, 182, 88);
+    cursor: pointer;
   }
   .und_under_menu{
     width: 60%;
