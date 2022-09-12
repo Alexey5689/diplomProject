@@ -48,10 +48,10 @@
     font-family: 'Fredoka';
     display: flex;
     width: 60%;
-    height: 50%;
+    height: 40%;
     background-color: transparent;
-    border-radius: 25px;
-    border-bottom: 1px solid rgba(111, 196, 197, 0.219);
+    
+    border: 1px solid rgba(111, 196, 197, 0.219);
     align-items: center;
     
   }
@@ -132,32 +132,40 @@
     align-items: center;
   }
   /* настройки контейнеров */
-  .right_bnt, .left_btn{
+  .right_bnt{
     display: flex;
     width: 50%;
     height: 40%;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .left_btn{
+    display: flex;
+    width: 50%;
+    height: 40%;
+    justify-content: flex-start;
     align-items: center;
   }
   
   /* настройки кнопок */
   .right_bnt>.btn,
   .left_btn>.btn{
-    color: rgba(241, 182, 88, 0.678);
+    color: white;
     font-size: 1vw;
     background-color: transparent;
-    width: 80%;
+    width: 65%;
     height: 100%;
     border: none;
-    border-radius: 25px;
-    border-bottom: 1px solid rgba(111, 196, 197, 0.219);
+    
     cursor: pointer;
+    background-color: rgb(241, 182, 88);
   }
   /* наведение на кнопки */
   .right_bnt>.btn:hover,
   .right_bnt>.btn:hover:focus,
   .left_btn>.btn:hover,
   .left_btn>.btn:focus{
-    background-color: rgba(111, 196, 197, 0.219);
-    color: rgb(241, 182, 88);
+    border: 1px solid rgb(241, 182, 88);
+    background-color: rgb(255, 255, 255);
+    color:rgb(241, 182, 88);
   }

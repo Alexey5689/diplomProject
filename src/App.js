@@ -23,13 +23,13 @@ function MyAccount(){
             </div> 
           </div>
           <div className='dwload_face'>
-            <button className='dwloadBtn' name='dwloadBtn' id='dwloadBtn'>Загрузить</button>
+            <button className='dwloadBtn' name='dwloadBtn' id='dwloadBtn'><div className='under_dwloadBtn'>Загрузить</div></button>
           </div>
         </div>
         <div className='account_menu'>
           <div className='user_menu'>Видео</div>
           <div className='user_menu'>Плейлист</div>
-          <div className='user_menu'>Аналы</div>
+          <div className='user_menu'>Журнал</div>
           <div className='user_menu'>Подписки</div>
         </div>
       </div>
@@ -337,10 +337,11 @@ function Menu(){
     <>
       <div className="menu">
         <div className="wrap">
-          <div className="under_menu"><div className="und_under_menu">Новинки</div></div>
+          <div className="under_menu"><div className="und_under_menu">Главная</div></div>
+          <div className="under_menu"><div className="und_under_menu">Каталог</div></div>
           <div className="under_menu"><div className="und_under_menu">Популярные</div></div>
-          <div className="under_menu"><div className="und_under_menu">Жанры</div></div>
-          <div className="under_menu"><div className="und_under_menu">Тарифы</div></div>
+          <div className="under_menu"><div className="und_under_menu">Новинки</div></div>
+          <div className="under_menu"><div className="und_under_menu">Лучшее</div></div>
         </div>
       </div>
     </>
