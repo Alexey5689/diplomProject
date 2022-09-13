@@ -6,6 +6,7 @@ import './menu.css';
 import './registration.css';
 import './enter.css';
 import './account.css';
+import './footer.css';
 
 function MyAccount(){
   return(
@@ -347,13 +348,72 @@ function Menu(){
     </>
   );
 }
+
+function Footer(){
+  const [email, setEmail] = useState(''); 
+  const [emailError, setEmailError] = useState('');
+
+
+  
+
+  const emailHandler = (e) =>{
+    setEmail(e.target.value);
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!re.test(String(e.target.value).toLocaleLowerCase())){
+      setEmailError("Некорректный email");
+      
+    }else{
+      setEmailError('');
+      
+    }
+  }
+  return(
+    <>
+    <div className='footer'>
+      <div className='footer_wrap'>
+        <div className='footer_left'></div>
+        <div className='footer_center'></div>
+        <div className='footer_right'>
+          <div className='footer_social'>
+
+          </div>
+          <div className='footer_form_form'> 
+          {(emailError) && <div className='inputError' style={{color:'red'}}>{emailError}</div>}
+            <form method="/" action="/" className="footer_forma">
+           
+              <div className="footer_form_subscribe">
+                <input 
+                  type="text" 
+                  value={email} 
+                  onChange={e=> emailHandler(e)} 
+                  placeholder="Почтовый ящик" 
+                  name="subscribe" 
+                  id="subscribe" 
+                  className="footer_form_input">
+                </input>
+              </div>
+              <div className ="footer_form_buttn">
+                <button tipe="sumbmit" className="footer_subscribe" name="footer_buttn" id="footer_buttn">Подписаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+
+    </>
+  );
+}
+
 function Body(){
   return(
     <>
       <div className="section_one">
-        <MyAccount/>
+        {/* <MyAccount/> */}
         {/* <RegClick/>
         <EnterClick/> */}
+       
       </div> 
     </>
   );
@@ -365,7 +425,8 @@ function MainContainer () {
       <div className ="container">
         <Head/>
         <Menu/>
-        <Body/>
+        <Body/> 
+        <Footer/>
       </div>
     </>
   );

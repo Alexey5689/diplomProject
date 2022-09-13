@@ -51,7 +51,7 @@
     height: 40%;
     background-color: transparent;
     
-    border: 1px solid rgba(111, 196, 197, 0.219);
+    border: 1px solid rgb(241, 182, 88);
     align-items: center;
     
   }
@@ -85,11 +85,11 @@
     padding-left: 5%;
   }
   /* изменения при наведении инпут */
-  .forma:focus,
+  /* .forma:focus,
   .forma:hover
   {
     background-color: rgba(111, 196, 197, 0.219);
-  }
+  } */
   
   /* кнопка */
   .form_buttn{
@@ -106,20 +106,20 @@
     width: 50%;
     height: 100%;
     background-color: transparent;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
   }
   .fa_search{
-    width: 50%;
-    height: 50%;
-    background-image: url(img/Group\ 3.svg);
+    width: 70%;
+    height: 70%;
+    background-image: url(img/bx-search-alt-2_no.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
   /* наведение на кнопку */
   .fa_search:focus,
   .fa_search:hover{
-    background-image: url(img/Group\ 4.svg);
+    background-image: url(img/bx-search-alt-2_or.svg);
     cursor: pointer;
   }
   
@@ -156,7 +156,6 @@
     width: 65%;
     height: 100%;
     border: none;
-    
     cursor: pointer;
     background-color: rgb(241, 182, 88);
   }
