@@ -353,20 +353,17 @@ function Footer(){
   const [email, setEmail] = useState(''); 
   const [emailError, setEmailError] = useState('');
 
-
-  
-
   const emailHandler = (e) =>{
     setEmail(e.target.value);
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if(!re.test(String(e.target.value).toLocaleLowerCase())){
+    if(!re.test(String(e.target.value).toLocaleLowerCase()) && e.target.value !==""){//устранение бага с исчезновением валидации
       setEmailError("Некорректный email");
-      
     }else{
       setEmailError('');
       
     }
   }
+  
   return(
     <>
     <div className='footer'>
@@ -375,7 +372,24 @@ function Footer(){
         <div className='footer_center'></div>
         <div className='footer_right'>
           <div className='footer_social'>
-
+              <div className='wrap_footer_social'>
+                <div className='social_icon'>
+                    <div className='icon_img ' style={{backgroundColor:'black'}}>
+                      <div className='img1'></div>
+                    </div>
+                    <div className='icon_img ' style={{backgroundColor:'red'}}>
+                      <div className='img2'></div>
+                    </div>  
+                </div>
+                <div className='social_icon'>
+                    <div className='icon_img ' style={{backgroundColor:'yellow'}}>
+                      <a href="https://vk.com/" className='img3'></a>
+                    </div>
+                    <div className='icon_img ' style={{backgroundColor:'green'}}>
+                      <a href="https://vk.com/" className='img4'></a>
+                    </div> 
+                </div>
+              </div>
           </div>
           <div className='footer_form_form'> 
           {(emailError) && <div className='inputError' style={{color:'red'}}>{emailError}</div>}
@@ -393,7 +407,12 @@ function Footer(){
                 </input>
               </div>
               <div className ="footer_form_buttn">
-                <button tipe="sumbmit" className="footer_subscribe" name="footer_buttn" id="footer_buttn">Подписаться</button>
+                <button type="sumbmit" 
+                        className="footer_subscribe" 
+                        name="footer_buttn" 
+                        id="footer_buttn"
+                        >Подписаться
+                </button>
               </div>
             </form>
           </div>

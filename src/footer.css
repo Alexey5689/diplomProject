@@ -30,11 +30,55 @@
     align-items: center;
     width: 100%;
     height: 50%;
-    border: 1px solid black;
 }
 .footer_social{
     width: 100%;
     height: 50%;
+    background-color: rgb(139, 120, 120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap_footer_social{
+    width: 30%;
+    height: 50%;
+    background-color: rgb(194, 196, 106);
+    display: flex;
+    flex-direction: column;
+}
+.social_icon{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+}
+
+.icon_img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img1,.img2,.img3,.img4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-image: url(img/bxl-google-plus.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.img2{
+    background-image: url(img/bxl-ok-ru.svg);
+}
+.img3{
+    background-image: url(img/bxl-twitter.svg);
+}
+.img4{
+    background-image: url(img/bxl-vk.svg);
 }
 .footer_forma{
     font-family: 'Fredoka';
