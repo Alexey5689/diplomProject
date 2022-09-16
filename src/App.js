@@ -369,30 +369,21 @@ function Footer(){
     <div className='footer'>
       <div className='footer_wrap'>
         <div className='footer_left'></div>
-        <div className='footer_center'></div>
-        <div className='footer_right'>
-          <div className='footer_social'>
-              <div className='wrap_footer_social'>
-                <div className='social_icon'>
-                    <div className='icon_img ' style={{backgroundColor:'black'}}>
-                      <div className='img1'></div>
-                    </div>
-                    <div className='icon_img ' style={{backgroundColor:'red'}}>
-                      <div className='img2'></div>
-                    </div>  
-                </div>
-                <div className='social_icon'>
-                    <div className='icon_img ' style={{backgroundColor:'yellow'}}>
-                      <a href="https://vk.com/" className='img3'></a>
-                    </div>
-                    <div className='icon_img ' style={{backgroundColor:'green'}}>
-                      <a href="https://vk.com/" className='img4'></a>
-                    </div> 
-                </div>
+        <div className='footer_center'>
+          <div className='wrap_footer_center'>
+            <div className='wrap_cooperIcon'>
+              <div className='cooperIcon'></div>
+            </div> 
+            <div className='wrap_text'>
+              <div className='text'>
+                <p>Все права защищены</p>
               </div>
+            </div>
           </div>
+        </div>
+        <div className='footer_right'>
           <div className='footer_form_form'> 
-          {(emailError) && <div className='inputError' style={{color:'red'}}>{emailError}</div>}
+            {(emailError) && <div className='inputError' style={{color:'orange'}}>{emailError}</div>}
             <form method="/" action="/" className="footer_forma">
            
               <div className="footer_form_subscribe">
@@ -415,6 +406,34 @@ function Footer(){
                 </button>
               </div>
             </form>
+          </div>
+          <div className='footer_social'>
+              <div className='wrap_footer_social'>
+                <div className='social_icon'>
+                    <div className='icon_img '>
+                      <a href="https://plus.google.com/" className='wrap_image'>
+                        <div className='img1'></div>
+                      </a>
+                    </div>
+                    <div className='icon_img '>           
+                      <a href="https://ok.ru/" className='wrap_image'>
+                        <div className='img2'></div>
+                      </a>
+                    </div>  
+                </div>
+                <div className='social_icon'>
+                    <div className='icon_img '>
+                      <a href="https://twitter.com/" className='wrap_image'>
+                        <div className='img3'></div>
+                      </a>
+                    </div>
+                    <div className='icon_img '>
+                      <a href="https://vk.com/" className='wrap_image'>
+                        <div className='img4'></div>
+                      </a>
+                    </div> 
+                </div>
+              </div>
           </div>
         </div>
       </div>
