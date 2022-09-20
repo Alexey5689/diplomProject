@@ -50,7 +50,6 @@
     width: 60%;
     height: 40%;
     background-color: transparent;
-    
     border: 1px solid rgb(241, 182, 88);
     align-items: center;
     
@@ -139,6 +138,7 @@
     justify-content: flex-end;
     align-items: center;
   }
+
   .left_btn{
     display: flex;
     width: 50%;
@@ -158,6 +158,8 @@
     border: none;
     cursor: pointer;
     background-color: rgb(241, 182, 88);
+    text-decoration: none;
+    align-items: center;
   }
   /* наведение на кнопки */
   .right_bnt>.btn:hover,
