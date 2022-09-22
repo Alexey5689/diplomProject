@@ -1,0 +1,52 @@
+.NewVideoContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    
+}
+.Catalog{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: 5%;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(109, 199, 201);
+    padding-left: 1%;
+}
+.NameCatalog{
+    display: flex;
+    align-items: flex-end;
+    font-family: Arial;
+    font-weight: 550;
+    width: auto;
+    height: 100%;
+    font-size: 20px;
+    padding-bottom: 3%;    
+}
+.VideoConten{
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 100%;
+    
+}
+.Line{
+    width: 100%;
+    height: .5%;
+    background-color: rgb(109, 199, 201);
+}
+.VideoContentLine{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 49.7%;
+}
+.VideoPlayer{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+
+}

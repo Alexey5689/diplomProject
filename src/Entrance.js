@@ -84,7 +84,7 @@ export default function EnterClick(){
                   </input>
                   <lable className='forma_lable'>Пароль:</lable>
                 </div>
-                <button onClick={()=>{setButtonState(false)}}  disabled={buttonState} type='submit' className='form_btn'>Регистрация.</button>
+                <button onClick={()=>{setButtonState(false)}}  disabled={buttonState} type='submit' className='form_btn'>Вход.</button>
               </form>
               
             </div>
