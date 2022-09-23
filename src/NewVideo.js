@@ -9,15 +9,31 @@ export default function NewVideoList(){
                 </div>
                 <div className='VideoConten'>
                     <div className='VideoContentLine'>
+
                         <div className='VideoPlayer'>
-                            <ReactPlayer
-                                height='90%'
-                                width='100%'
-                                url={'https://www.youtube.com/watch?v=6S-NJCLOnJ0'}
-                                playing={true}
-                                controls='false'
-                                
-                            />
+                            <div className='wrappVideo'>
+                                <ReactPlayer
+                                    height='85%'
+                                    width='100%'
+                                    url={'https://www.youtube.com/watch?v=6S-NJCLOnJ0'}
+                                    playing={true}
+                                    controls='false'
+                                />
+                                <div className='videoInfo'>
+                                    <div className='nameVideo'>
+                                        <p>Название видео</p>
+                                    </div>
+                                    <div className='reaction_move'>
+                                        <div className='like'>
+
+                                        </div>
+                                        <div className='dislike'>
+
+                                        </div>
+                                        <div className='share'></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className='Line'></div>
