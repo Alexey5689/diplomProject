@@ -37,16 +37,15 @@
     height: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .wrap_footer_social{
-    width: 25%;
+    width: 40%;
     height: 50%;
-    
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
 }
 .social_icon{
     width: 100%;
@@ -82,33 +81,33 @@
 }
 
 .img1{
-    background-image: url(img/G_white.svg);
+    background-image: url(img/bxl-telegram-orange.svg);
 }
 .img1:hover,
 .img1:focus{
-    background-image: url(img/G_or.svg)
+    background-image: url(img/bxl-telegram-white.svg)
 }
 .img2{
-    background-image: url(img/OK_white.svg);
+    background-image: url(img/bxl-ok-ru-orange.svg);
 
 }
 .img2:hover,
 .img2:focus{
-    background-image: url(img/OK_or.svg)
+    background-image: url(img/bxl-ok-ru-white.svg)
 }
 .img3{
-    background-image: url(img/twi_white.svg);
+    background-image: url(img/bxl-whatsapp-orange.svg);
 }
 .img3:hover,
 .img3:focus{
-    background-image: url(img/twit_or.svg)
+    background-image: url(img/bxl-whatsapp-white.svg)
 }
 .img4{
-    background-image: url(img/VK_white.svg);
+    background-image: url(img/bxl-vk-orange.svg);
 }
 .img4:hover,
 .img4:focus{
-    background-image: url(img/VK_or.svg)
+    background-image: url(img/bxl-vk-white.svg)
 }
 
 .footer_forma{

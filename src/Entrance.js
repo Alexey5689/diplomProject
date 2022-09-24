@@ -10,8 +10,8 @@ export default function EnterClick(){
     const [emailError, setEmailError] = useState('Это поле не может быть пустым');
     const [passWordError, setPassWordError] = useState('Это поле не может быть пустым');
   
-    const [buttonState,setButtonState] = useState('');
-  
+    // const [buttonState,setButtonState] = useState('');
+    // onClick={()=>{setButtonState(false)}}  disabled={buttonState}
   
     const emailHandler = (e) =>{
       setEmail(e.target.value);
@@ -84,7 +84,7 @@ export default function EnterClick(){
                   </input>
                   <lable className='forma_lable'>Пароль:</lable>
                 </div>
-                <button onClick={()=>{setButtonState(false)}}  disabled={buttonState} type='submit' className='form_btn'>Вход.</button>
+                <button type='submit' className='form_btn'>Вход.</button>
               </form>
               
             </div>

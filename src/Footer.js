@@ -80,7 +80,7 @@ export default function Footer(){
                 <div className='wrap_footer_social'>
                   <div className='social_icon'>
                       <div className='icon_img '>
-                        <a href="https://plus.google.com/" className='wrap_image'>
+                        <a href="https://web.telegram.org/z/" className='wrap_image'>
                           <div className='img1'></div>
                         </a>
                       </div>
@@ -89,10 +89,8 @@ export default function Footer(){
                           <div className='img2'></div>
                         </a>
                       </div>  
-                  </div>
-                  <div className='social_icon'>
                       <div className='icon_img '>
-                        <a href="https://twitter.com/" className='wrap_image'>
+                        <a href="https://www.whatsapp.com/?lang=ru" className='wrap_image'>
                           <div className='img3'></div>
                         </a>
                       </div>
